@@ -2,14 +2,68 @@
 
 html {
     background-color: $backgroundcolor;
-    height: 2000px;
+    height: 1800px;
     margin-bottom: 75px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Nunito', sans-serif;
+    @include mq-maxwidth($mobilesize) {
+        height: 5100px;
+        margin-bottom: 30px;
+    }
+    @include mq-maxwidth($tabletsize) {
+        height: 2850px;
+        margin-bottom: 30px;
+    }
 }
 
-header {
+.header {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 200px;
+
+    @include mq-maxwidth($mobilesize) {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    &__profile {
+        width: 150px;
+        height: 150px;
+        background-image: url('img/IMG_0528.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-right: 30px;
+        border-radius: 100%;
+        transition: 200ms linear;
+        flex-shrink: 0;
+
+        @include mq-maxwidth($mobilesize) {
+            display: none;
+            margin-top: 0px;
+        }
+
+        &:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        &__name {
+            font-size: 36px;
+            font-family: 'Bitter', serif;
+            margin-bottom: 0%;
+            font-weight: bolder;
+        }
+        &__bio {
+            font-size: 18px;
+            margin-top: 0px;
+        }
+    }
 }
 
 main {
@@ -20,6 +74,9 @@ main {
     padding-left: 4%;
     padding-right: 4%;
     gap: 25px;
+    @include mq-maxwidth($tabletsize) {
+        padding-right: 0%;
+    }
 
     .collection {
         width: 22rem;
@@ -29,8 +86,15 @@ main {
         margin-right: auto;
         margin-left: auto;
         border-radius: 25px;
-        transition: 200ms linear;
+        transition: 150ms linear;
 
+        @include mq-maxwidth($mobilesize) {
+            margin-bottom: 15px;
+        }
+        @include mq-maxwidth($tabletsize) {
+            margin-right: 0;
+            margin-left: 0;
+        }
         &:hover {
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         }
@@ -71,6 +135,54 @@ main {
                     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
                 }
             }
+        }
+
+        .title {
+            margin-left: 15px;
+            margin-top: 6px;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+
+        .csgo__title {
+            font-size: 20px;
+        }
+
+        .editor {
+            margin-left: 15px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        .release {
+            margin-left: 15px;
+            margin-top: 0;
+        }
+
+        .bar {
+            width: 90%;
+            height: 2px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 17px;
+            border-radius: 10px;
+        }
+
+        .lienboite {
+            width: fit-content;
+                a {
+                    .lien {
+                        background-image: url('img/x.svg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 60px;
+                        width: 60px;
+                        margin-top: 20%;
+                        margin-left: 10%;
+                    }
+                }
         }
     }
 }
