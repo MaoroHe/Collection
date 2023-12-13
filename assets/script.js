@@ -104,7 +104,7 @@ const collection = [
     developper: "Rockstar Studios",
     release: "26 October 2018",
     picture: "assets/img/rdr2.jpg",
-    genre: ['Action-Adventure','Third Person Shooter', 'Open-World'],
+    genre: ['Action-Adventure', 'Open-World'],
     id: "rdr2",
     twitter: "https://twitter.com/RockstarGames",
   },
@@ -130,10 +130,10 @@ function cardCreator() {
     let pCreator2 = document.createElement('p');
     let editorInjector = document.createTextNode(`${editor}, ${dev}`);
     let dateInjector = document.createTextNode(release);
+    let divCreator2 = document.createElement('div');
     let barDiv = document.createElement('div');
-    let spanCreator = document.createElement('span');
+    let spanCreator = document.createElement('div');
     let aCreator = document.createElement('a');
-    let aText = document.createTextNode('coucou');
     
 
     mainPath.appendChild(divCreator);
@@ -169,10 +169,12 @@ function cardCreator() {
     pCreator2.className = `release ${id}__release`;
     divCreator.appendChild(barDiv);
     barDiv.className = `bar ${id}__bar`;
-    divCreator.appendChild(spanCreator);
-    spanCreator.appendChild(aCreator);
+    divCreator.appendChild(divCreator2)
+    divCreator2.appendChild(aCreator);
+    divCreator2.className = 'lienboite'
+    aCreator.appendChild(spanCreator);
     aCreator.href = elem.twitter;
-    aCreator.appendChild(aText)
+    spanCreator.className = 'lien';
   };
 };
 

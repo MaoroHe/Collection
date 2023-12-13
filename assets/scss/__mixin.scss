@@ -1,0 +1,14 @@
+$mobilesize: '585px';
+$tabletsize: '1024px';
+
+@mixin mq-maxwidth($screensize) {
+    @media (max-width:$screensize) {
+        @content;
+    }
+}
+
+@mixin mq-minwidth($screensize) {
+    @media (min-width:$screensize) {
+        @content;
+    }
+}
