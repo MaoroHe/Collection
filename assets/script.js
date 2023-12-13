@@ -139,18 +139,21 @@ function cardCreator() {
     mainPath.appendChild(divCreator);
     divCreator.className = `collection ${id}`;
     divCreator.appendChild(imgCreator);
-    imgCreator.src = picture;
     imgCreator.style.backgroundImage = `url(${picture})`
     imgCreator.className = `img ${id}__img`;
+
+    let genreDiv = document.createElement('div');
+    divCreator.appendChild(genreDiv);
+    genreDiv.className = `genre ${id}__genre`;
     
     for(let element of elem.genre) {
-        let genreDiv = document.createElement("span");
+        let genreSpan = document.createElement("span");
         let genreP = document.createElement("p");
         let genreInjecter = document.createTextNode(element);
 
-        divCreator.appendChild(genreDiv);
-        genreDiv.className = `genre ${id}__genre`;
-        genreDiv.appendChild(genreP);
+        genreDiv.appendChild(genreSpan)
+        genreSpan.className = `genreS ${id}__genreS`;
+        genreSpan.appendChild(genreP);
         genreP.appendChild(genreInjecter);
         genreP.className = `genreText ${id}__genre__text`
     }

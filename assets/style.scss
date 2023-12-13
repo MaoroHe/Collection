@@ -2,7 +2,9 @@
 
 html {
     background-color: $backgroundcolor;
+    height: 2000px;
     margin-bottom: 75px;
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -14,18 +16,24 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 700px;
+    height: 1000px;
     padding-left: 4%;
     padding-right: 4%;
+    gap: 25px;
 
     .collection {
-        width: 19%;
-        height: 50%;
+        width: 22rem;
+        height: 450px;
         background-color: $white;
-        margin-bottom: 1.5%;
+        margin-bottom: 45px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 25px;
+        transition: 200ms linear;
+
+        &:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
 
         .img {
             width: 100%;
@@ -36,5 +44,33 @@ main {
             border-top-right-radius: 25px;
             border-top-left-radius: 25px;
         };
+
+        .genre {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            .genreS {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                width: fit-content;
+                height: 22px;
+                background-color: $grey;
+                padding-left: 8px;
+                padding-right: 8px;
+                border-radius: 10px;
+                font-family: 'Bitter', serif;
+                margin-top: 7px;
+                margin-left: 9px;
+                font-size: 16px;
+                transition: all 150ms linear;
+
+                &:hover {
+                    color: $white;
+                    background-color: $redpastel;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+                }
+            }
+        }
     }
 }
