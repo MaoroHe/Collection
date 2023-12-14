@@ -267,8 +267,7 @@ function normalSortButton() {
   normalP.appendChild(normalText);
 
   normalButton.addEventListener("click", (event) => {
-        collection.sort((a, b) => (a.name < b.name) ? 1 : ((b.name < a.name) ? -1 : 0));
-        pageCleaner()
+        window.location.reload();
       })
 }
 
