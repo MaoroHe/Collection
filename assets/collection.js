@@ -1,0 +1,111 @@
+export const collection = [
+    {
+      name: "Valorant",
+      editor: "Riot Games",
+      developper: "Riot Games",
+      release: "2 June 2020",
+      picture: "assets/img/valorant.jpg",
+      genre: ["FPS"],
+      id: "valorant",
+      twitter: "https://twitter.com/VALORANT",
+    },
+  
+    {
+      name: "League of Legends",
+      editor: "Riot Games",
+      developper: "Riot Games",
+      release: "27 October 2009",
+      picture: "assets/img/lol.jpg",
+      genre: ["MOBA"],
+      id: 'lol',
+      twitter: "https://twitter.com/LeagueOfLegends",
+    },
+  
+    {
+      name: "Minecraft",
+      editor: "Mojang Studios",
+      developper: "Mojang Studios",
+      release: "18 November 2011",
+      picture: "assets/img/minecraft.jpg",
+      genre: ["Sandbox", "Adventure", "Survival"],
+      id: "minecraft",
+      twitter: "https://twitter.com/Minecraft",
+    },
+  
+    {
+      name: "Counter-Strike: Global Offensive",
+      editor: "Valve",
+      developper: "Valve",
+      release: "21 August 2012",
+      picture: "assets/img/counterstrike.jpg",
+      genre: ["FPS"],
+      id: 'csgo',
+      twitter: "https://twitter.com/CounterStrike",
+    },
+  
+    {
+      name: "Rust",
+      editor: "Facepunch Studios",
+      developper: "Facepunch Studios",
+      release: "8 February 2018",
+      picture: "assets/img/rust.jpg",
+      genre: ["Adventure", "Survival", "PvP", "PvE"],
+      id: "rust",
+      twitter: "https://twitter.com/playrust",
+    },
+  
+    {
+      name: "Cyberpunk 2077",
+      editor: "CD Projekt",
+      developper: "CD Projekt RED",
+      release: "10 December 2020",
+      picture: "assets/img/cyberpunk-2077.jpg",
+      genre: ["RPG"],
+      id: "cyberpunk",
+      twitter: "https://twitter.com/CyberpunkGame",
+    },
+  
+    {
+      name: "Lethal Company",
+      editor: "Zeekerss",
+      developper: "Zeekerss",
+      release: "23 October 2023",
+      picture: "assets/img/lethal-company.jpg",
+      genre: ["Horror"],
+      id: "lethalcompany",
+      twitter: "https://twitter.com/ZeekerssRBLX",
+    },
+  
+    {
+      name: "Baldur's Gate 3",
+      editor: "Larian Studios",
+      developper: "Larian Studios",
+      release: "3 August 2023",
+      picture: "assets/img/baldurs-gate-3.jpg",
+      genre: ["RPG"],
+      id: "baldurgate",
+      twitter: "https://twitter.com/baldursgate3",
+    },
+  
+    {
+      name: "Phasmophobia",
+      editor: "Kinetic Games",
+      developper: "Kinetic Games",
+      release: "  18 September 2020",
+      picture: "assets/img/phasmophobia.jpg",
+      genre: ["Survival", "Horror"],
+      id: "phasmophobia",
+      twitter: "https://twitter.com/KineticGame",
+    },
+  
+    {
+      name: "Red Dead Redemption 2",
+      editor: "Rockstar Games",
+      developper: "Rockstar Studios",
+      release: "26 October 2018",
+      picture: "assets/img/rdr2.jpg",
+      genre: ['OP'],
+      id: "rdr2",
+      twitter: "https://twitter.com/RockstarGames",
+    },
+  ];
